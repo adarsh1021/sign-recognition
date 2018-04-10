@@ -132,6 +132,7 @@
                         },
                  success: function(){
                      console.log("success");
+                     location.reload();
                  }
             });
             return false;
@@ -144,9 +145,13 @@
 <!--form method="post" enctype="multipart/form-data"-->
 	<input id="imageFile" name="imageFile" type="file" class="imageFile"  accept="image/*"> 
     <!--input type="file" name="myfile"><br-->
+    <br><br>
     <input type="radio" name="class" class="class" value="0" checked>Zero<br>
     <input type="radio" name="class" class="class" value="1">One<br>
     <input type="radio" name="class" class="class" value="2">Two<br>
+    <input type="radio" name="class" class="class" value="3">Three<br>
+    <input type="radio" name="class" class="class" value="4">Four<br>
+    <input type="radio" name="class" class="class" value="5">Five<br>
     <br>
 
     <input type="button" value="Resize Image"  onclick="ResizeImage()"/> 
@@ -155,7 +160,7 @@
 
 	<img name="output" src="" id="output">
 
-    <button id="id-submit" type="submit">Upload</button>
+    <br><button id="id-submit" type="submit">Upload</button>
    
 <!--/form-->
 
